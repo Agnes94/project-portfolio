@@ -1,0 +1,95 @@
+/*
+font-family: 'Roboto', sans-serif;
+font-family: 'Montserrat', sans-serif;
+*/
+
+body {
+  background-color: #f1f1ee;
+  color: black;
+  margin: 0 !important;
+}
+
+/*HEADER*/
+
+.avatar {
+  border-radius: 50%;
+  height: 162px;
+  width: 162px;
+  background-color: transparent;
+  border: 3px solid white;
+  object-fit: cover;
+  margin-left: 176px;
+}
+
+header {
+  background: url(Assets/leaves.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  margin-bottom: 5px;
+  margin-top: 0;
+  width: 100%;
+  height: 512px;
+  background-color: transparent;
+}
+
+.social-icons {
+  display: flex;
+  padding-left: 170px;
+  margin-top: 0;
+}
+
+li {
+  list-style: none;
+  margin: 5px;
+  color: white;
+  border: 3px solid white;
+  border-radius: 50%;
+  transition: 0.5s;
+  width: 42px;
+  height: 42px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+
+li:hover {
+  color: grey;
+  border: 3px solid grey;
+}
+
+.icon {
+  width: 18px;
+  height: 18px;
+  padding: 11px;
+}
+
+.title-container {
+  margin-left: 40px;
+  margin-bottom: 45px;
+}
+
+#portfolio-title {
+  font-weight: normal;
+  opacity: 0.8;
+}
+
+h1 {
+  margin-bottom: 5px;
+}
+
+h2 {
+  margin: 0;
+}
+
+h3 {
+  float: left;
+  letter-spacing: 0.5px;
+  padding-right: 20px;
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+  font-weight: bolder;
+}
