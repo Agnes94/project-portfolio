@@ -3,10 +3,31 @@ font-family: 'Roboto', sans-serif;
 font-family: 'Montserrat', sans-serif;
 */
 
+html,
 body {
-  background-color: #f1f1ee;
+  background-color: #ffffff;
   color: black;
   margin: 0 !important;
+  width: 100%;
+}
+
+a {
+  cursor: pointer;
+}
+
+h2 {
+  background-color: #748a84;
+  color: #ffffff;
+  width: 260px;
+  height: 33px;
+  font-family: "Montserrat";
+  font-size: 22px;
+  text-transform: uppercase;
+  padding-top: 5px;
+  font-weight: bold;
+  margin: 0px 60px 40px 55px;
+  justify-content: center;
+  text-align: center;
 }
 
 /*HEADER*/
@@ -16,9 +37,11 @@ body {
   height: 162px;
   width: 162px;
   background-color: transparent;
-  border: 3px solid white;
+  border: 3px solid #ffffff;
   object-fit: cover;
   margin-left: 176px;
+  margin-right: 40px;
+  float: right;
 }
 
 header {
@@ -27,25 +50,28 @@ header {
   background-size: cover;
   background-position: center center;
   font-family: "Montserrat", sans-serif;
-  color: white;
+  color: #ffffff;
   margin-bottom: 5px;
   margin-top: 0;
   width: 100%;
   height: 512px;
   background-color: transparent;
+  border: 1px solid #707070;
 }
 
 .social-icons {
   display: flex;
-  padding-left: 170px;
+  padding-left: 165px;
   margin-top: 0;
+  float: right;
+  padding-right: 36px;
 }
 
-li {
+header li {
   list-style: none;
   margin: 5px;
-  color: white;
-  border: 3px solid white;
+  color: #ffffff;
+  border: 3px solid #ffffff;
   border-radius: 50%;
   transition: 0.5s;
   width: 42px;
@@ -56,8 +82,8 @@ li {
 }
 
 li:hover {
-  color: grey;
-  border: 3px solid grey;
+  border: 3px solid #707070;
+  cursor: pointer;
 }
 
 .icon {
@@ -69,6 +95,7 @@ li:hover {
 .title-container {
   margin-left: 40px;
   margin-bottom: 45px;
+  float: left;
 }
 
 #portfolio-title {
@@ -80,8 +107,14 @@ h1 {
   margin-bottom: 5px;
 }
 
-h2 {
+.title-container h2 {
   margin: 0;
+  background-color: transparent;
+  text-transform: none;
+  display: inline;
+  font-weight: bold;
+  font-size: 22px;
+  font-family: "Montserrat";
 }
 
 h3 {
@@ -89,7 +122,270 @@ h3 {
   letter-spacing: 0.5px;
   padding-right: 20px;
   text-transform: uppercase;
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto";
   font-size: 13px;
   font-weight: bolder;
+}
+
+/*SELF-PRESENTATION*/
+
+.line-dot {
+  height: 3px;
+  width: 50px;
+  background: #687c77;
+  position: relative;
+  float: left;
+  top: 12px;
+  margin-right: 15px;
+}
+
+.line-dot::after {
+  content: "";
+  height: 10px;
+  width: 10px;
+  position: relative;
+  float: right;
+  top: -3px;
+  border-radius: 50%;
+  background: #45524f;
+}
+
+.self-presentation {
+  width: 100%;
+  height: 340px;
+  background-color: #edebeb;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  text-align: left;
+}
+
+.self-presentation p {
+  padding: 50px 35px 50px 35px;
+  margin-top: 0;
+  letter-spacing: 1px;
+}
+
+/*TECH SKILLS*/
+
+.tech-skills {
+  height: 340px;
+  width: 100%;
+  padding-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tech-skills p {
+  background-color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  text-align: center;
+  opacity: 1;
+  margin-left: 35px;
+  margin-right: 35px;
+  letter-spacing: 1px;
+  width: 303px;
+  height: 182px;
+}
+
+/*MAIN PROJECTS*/
+
+.featured-projects {
+  width: 100%;
+  background-color: #edebeb;
+  padding-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.website-image {
+  background: url(Assets/weatherapp.png);
+  width: 300px;
+  height: 180px;
+  position: relative;
+  margin-left: 35px;
+  margin-right: 35px;
+  opacity: 0.7;
+  background-size: cover;
+}
+
+.website-image:hover,
+.website-image2:hover {
+  border: 2px solid grey;
+  opacity: 1;
+}
+
+.main-projects {
+  text-align: left;
+  margin-left: 35px;
+  margin-right: 35px;
+  font-family: "Roboto";
+  width: 300px;
+  height: 80px;
+  font-size: 17px;
+}
+
+.arrows {
+  text-decoration: underline;
+  color: #748a84;
+  font-weight: 700;
+}
+
+.tags {
+  background: #748a84;
+  border: 1px solid #748a84;
+  padding: 2px;
+  width: 40px;
+  margin-right: 2px;
+  font-family: "Roboto";
+}
+
+.project-title {
+  color: #748a84;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.website-image2 {
+  background: url(Assets/businessite.png);
+  width: 300px;
+  height: 180px;
+  position: relative;
+  margin: 60px 35px 0px 35px;
+  opacity: 0.7;
+  background-size: cover;
+}
+
+/*OTHER PROJECTS*/
+
+.other-projects {
+  font-family: "Roboto";
+  margin-bottom: 40px;
+  width: 300px;
+  justify-content: center;
+}
+
+.other-projects h3 {
+  color: #748a84;
+  font-family: "Montserrat";
+  font-size: 22px;
+  text-transform: uppercase;
+  background: transparent;
+  margin-top: 100px;
+  margin-bottom: 40px;
+  margin-left: 40px;
+  text-align: center;
+}
+
+/*ARTICLES*/
+
+.article-section {
+  padding-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Roboto";
+  justify-content: center;
+}
+
+.other-articles {
+  height: 450px;
+}
+
+.article-section h3 {
+  color: #748a84;
+  font-family: "Montserrat";
+  font-size: 22px;
+  text-transform: uppercase;
+  justify-content: center;
+  background: transparent;
+  margin-top: 100px;
+  margin-bottom: 30px;
+  margin-left: 30px;
+  justify-content: center;
+  text-align: center;
+}
+
+.article-image {
+  background: url(Assets/article.jpeg);
+  width: 300px;
+  height: 180px;
+  position: relative;
+  margin-left: 35px;
+  margin-right: 35px;
+  opacity: 0.7;
+  background-size: cover;
+}
+
+.article-image:hover {
+  border: 2px solid grey;
+  opacity: 1;
+}
+
+.article {
+  margin: 40px;
+  font-size: 17px;
+  letter-spacing: 1px;
+  text-align: left;
+  justify-content: center;
+  width: 300px;
+  height: 280px;
+}
+
+.date {
+  color: #45524f;
+  text-transform: uppercase;
+}
+
+.more-thoughts h3 {
+  margin: 50px;
+  text-align: center;
+  padding-right: 0px;
+  justify-content: center;
+}
+
+/*SKILLS*/
+
+.skills {
+  background: #edebeb;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 40px;
+}
+
+/*FOR MORE*/
+
+.social-media {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 40px;
+  color: #45524f;
+  background-color: black;
+}
+
+.social-icons li {
+  color: #333d38;
+}
+
+/*FOOTER*/
+
+footer {
+  height: 150px;
+  background-color: #333d38;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  font-size: 20px;
+  font-family: "Roboto";
+}
+
+footer h2 {
+  background: transparent;
+  margin: 30px;
 }
