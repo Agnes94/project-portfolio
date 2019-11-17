@@ -32,18 +32,6 @@ h2 {
 
 /*HEADER*/
 
-.avatar {
-  border-radius: 50%;
-  height: 162px;
-  width: 162px;
-  background-color: transparent;
-  border: 3px solid #ffffff;
-  object-fit: cover;
-  margin-left: 176px;
-  margin-right: 40px;
-  float: right;
-}
-
 header {
   background: url(Assets/leaves.jpg);
   background-repeat: no-repeat;
@@ -57,17 +45,30 @@ header {
   height: 512px;
   background-color: transparent;
   border: 1px solid #707070;
+  display: flex;
+}
+
+.main-header-container {
+  width: 100%;
+  margin-right: 40px;
+}
+
+.icons-container {
+  width: 100%;
+  height: 150px;
+  position: absolute;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .social-icons {
   display: flex;
   padding-left: 165px;
-  margin-top: 0;
-  float: right;
+  margin: 0;
   padding-right: 36px;
 }
 
-header li {
+.social-icons li {
   list-style: none;
   margin: 5px;
   color: #ffffff;
@@ -76,8 +77,6 @@ header li {
   transition: 0.5s;
   width: 42px;
   height: 42px;
-  justify-content: center;
-  align-items: center;
   margin-top: 100px;
 }
 
@@ -92,15 +91,38 @@ li:hover {
   padding: 11px;
 }
 
+.avatar {
+  border-radius: 50%;
+  height: 162px;
+  width: 162px;
+  border: 3px solid #ffffff;
+  object-fit: cover;
+  margin-top: 370px;
+  margin-right: 40px;
+  position: absolute;
+  justify-content: flex-end;
+}
+
+.header-picture {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  padding-right: 40px;
+}
+
 .title-container {
-  margin-left: 40px;
-  margin-bottom: 45px;
-  float: left;
+  margin: 180px 0px 45px 30px;
+  position: absolute;
+  justify-content: flex-start;
+}
+
+.title-container span {
+  font-weight: 700;
+  opacity: 2;
 }
 
 #portfolio-title {
   font-weight: normal;
-  opacity: 0.8;
 }
 
 h1 {
@@ -118,7 +140,6 @@ h1 {
 }
 
 h3 {
-  float: left;
   letter-spacing: 0.5px;
   padding-right: 20px;
   text-transform: uppercase;
@@ -354,6 +375,33 @@ h3 {
   flex-direction: column;
   align-items: center;
   padding-top: 40px;
+  font-family: "Roboto";
+}
+
+.skills h2 {
+  margin-bottom: 0px;
+}
+
+.skills-listing {
+  display: flex;
+  width: 300px;
+}
+
+.skill-column {
+  flex-basis: 50%;
+  text-align: center;
+}
+
+.skill-title {
+  color: #687c77;
+  text-transform: uppercase;
+  margin: 10px;
+  font-weight: bold;
+}
+
+ul {
+  list-style: none;
+  padding: 20px 0px;
 }
 
 /*FOR MORE*/
@@ -363,29 +411,69 @@ h3 {
   flex-direction: column;
   align-items: center;
   padding-top: 40px;
+  padding-bottom: 30px;
+  height: 300px;
   color: #45524f;
-  background-color: black;
+  background-color: #748a84;
 }
 
-.social-icons li {
-  color: #333d38;
+.social-media-icons {
+  padding-left: 25px;
+  padding-bottom: 30px;
+  width: 330px;
+}
+
+.social-media-icons li {
+  color: #ffffff;
+  list-style: none;
+  border: 3px solid #ffffff;
+  border-radius: 50%;
+  transition: 0.5s;
+  width: 60px;
+  height: 60px;
+  justify-content: center;
+  margin-right: 30px;
+  display: inline-block;
+  justify-content: center;
+  margin-top: 10px;
+  font-family: "Roboto";
+  text-transform: uppercase;
+}
+
+.social-media-icons li:hover {
+  border: 3px solid #707070;
+}
+
+.bottom-icon {
+  width: 25px;
+  height: 25px;
+  padding: 15px;
+}
+
+.social-media h4 {
+  margin-top: 10px;
+  font-family: "Roboto";
+  text-transform: uppercase;
+  text-align: left;
 }
 
 /*FOOTER*/
 
 footer {
   height: 150px;
-  background-color: #333d38;
+  background-color: #edebeb;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-top: 50px;
-  padding-bottom: 50px;
+  padding-bottom: 60px;
   font-size: 20px;
   font-family: "Roboto";
+  color: #45524f;
 }
 
 footer h2 {
   background: transparent;
   margin: 30px;
+  color: #45524f;
 }
