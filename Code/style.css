@@ -1,8 +1,3 @@
-/*
-font-family: 'Roboto', sans-serif;
-font-family: 'Montserrat', sans-serif;
-*/
-
 html,
 body {
   background-color: #ffffff;
@@ -25,29 +20,37 @@ h2 {
   background-color: #748a84;
   color: #ffffff;
   width: 260px;
-  height: 33px;
+  height: 35px;
   font-family: "Montserrat";
   font-size: 22px;
   text-transform: uppercase;
   padding-top: 5px;
   font-weight: bold;
   margin: 0px 60px 40px 55px;
-  justify-content: center;
-  text-align: center;
+  padding-left: 10px;
 }
 
 h3 {
   letter-spacing: 0.5px;
-  margin-top: 40px;
+  margin-top: 50px;
   text-transform: uppercase;
   font-family: "Roboto";
-  font-size: 15px;
+  font-size: 20px;
   font-weight: bolder;
-  color: #748a84;
+  color: #45524f;
 }
 
 .tech-skills h2 {
   width: 80px;
+  padding-left: 15px;
+}
+
+.article-section h2 {
+  width: 180px;
+}
+
+.skills h2 {
+  width: 90px;
 }
 
 /*HEADER*/
@@ -238,6 +241,16 @@ header {
   background-size: cover;
 }
 
+.website-image2 {
+  background: url(Assets/businessite.png);
+  width: 300px;
+  height: 180px;
+  position: relative;
+  margin: 60px 35px 0px 35px;
+  opacity: 0.7;
+  background-size: cover;
+}
+
 .website-image:hover,
 .website-image2:hover {
   border: 2px solid grey;
@@ -275,33 +288,12 @@ header {
   font-weight: 700;
 }
 
-.website-image2 {
-  background: url(Assets/businessite.png);
-  width: 300px;
-  height: 180px;
-  position: relative;
-  margin: 60px 35px 0px 35px;
-  opacity: 0.7;
-  background-size: cover;
-}
-
 /*OTHER PROJECTS*/
 
 .other-projects {
   font-family: "Roboto";
   margin-bottom: 40px;
   width: 300px;
-}
-
-.other-projects h3 {
-  color: #748a84;
-  font-family: "Montserrat";
-  font-size: 22px;
-  text-transform: uppercase;
-  background: transparent;
-  margin-top: 100px;
-  margin-bottom: 40px;
-  margin-left: 40px;
 }
 
 /*ARTICLES*/
@@ -312,6 +304,7 @@ header {
 
 .article-section {
   padding-top: 40px;
+  padding: 40px 40px 0px 40px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -321,20 +314,6 @@ header {
 
 .other-articles {
   height: 450px;
-}
-
-.article-section h3 {
-  color: #748a84;
-  font-family: "Montserrat";
-  font-size: 22px;
-  text-transform: uppercase;
-  justify-content: center;
-  background: transparent;
-  margin-top: 100px;
-  margin-bottom: 30px;
-  margin-left: 30px;
-  justify-content: center;
-  text-align: center;
 }
 
 .article-image {
@@ -422,7 +401,7 @@ ul {
 .social-media {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  justify-content: center;
   padding-top: 40px;
   padding-bottom: 30px;
   height: 300px;
@@ -463,11 +442,14 @@ ul {
   padding: 15px;
 }
 
-.social-media h4 {
+.social-media h2,
+footer h2 {
   margin-top: 10px;
   font-family: "Roboto";
   text-transform: uppercase;
-  text-align: center;
+  justify-content: center;
+  margin-left: 120px;
+  width: 120px;
 }
 
 /*FOOTER*/
@@ -497,53 +479,43 @@ footer h2 {
   header {
     height: 650px;
   }
-
   .header-picture {
     padding-right: 200px;
   }
-
   .avatar {
     margin-top: 370px;
     height: 300px;
     width: 300px;
   }
-
   .icon {
     width: 45px;
     height: 45px;
     padding: 20px;
   }
-
   .social-icons li {
     width: 85px;
     height: 85px;
     border: 5px solid;
   }
-
   .social-icons {
     margin-right: 200px;
   }
-
   .title-container {
     padding-left: 250px;
     padding-top: 40px;
     margin-top: 200px;
   }
-
   .title-container h2 {
     font-size: 30px;
     padding-top: 20px;
   }
-
   #portfolio-title {
     font-weight: normal;
     font-size: 25px;
   }
-
   h1 {
     font-size: 80px;
   }
-
   .self-presentation {
     display: flex;
     flex-direction: column;
@@ -552,7 +524,6 @@ footer h2 {
     height: 400px;
     font-size: 30px;
   }
-
   .line-dot {
     top: 22px;
     width: 90px;
@@ -563,25 +534,20 @@ footer h2 {
     width: 20px;
     top: -6px;
   }
-
   .wrapper {
     max-width: 900px;
   }
-
   .tech-skills p {
     width: 800px;
     font-size: 30px;
   }
-
   .tech-skills {
     padding-top: 120px;
     height: 450px;
   }
-
   .tech-skills h2 {
     width: 150px;
   }
-
   h2 {
     font-size: 40px;
     height: 40px;
@@ -589,50 +555,41 @@ footer h2 {
     padding-bottom: 10px;
     margin-bottom: 60px;
   }
-
   .featured-projects-wrapper {
     flex-direction: column;
     display: flex;
   }
-
   .featured-projects-container {
     display: flex;
     flex-direction: row;
   }
-
   .website-image2 {
     margin-top: 0;
     width: 500px;
     height: 300px;
   }
-
   .website-image {
     width: 500px;
     height: 300px;
   }
-
   .main-projects {
     width: 500px;
     height: 50px;
     font-size: 25px;
     margin-bottom: 50px;
   }
-
   .project-title {
     font-size: 25px;
   }
-
   .arrows {
     font-size: 20px;
   }
-
   .tags {
     font-size: 20px;
     width: 80px;
     height: 30px;
     border: 5px solid #748a84;
   }
-
   .other-projects {
     width: 900px;
     font-size: 25px;
@@ -640,12 +597,10 @@ footer h2 {
     flex-direction: column;
     justify-content: space-between;
   }
-
   h3 {
     font-size: 35px;
     margin-top: 200px;
   }
-
   .other-articles {
     width: 900px;
     font-size: 25px;
@@ -654,34 +609,27 @@ footer h2 {
     flex-direction: column;
     justify-content: space-between;
   }
-
   .article-section h3 {
     padding: 0px;
     font-size: 35px;
   }
-
   .article {
     font-size: 20px;
   }
-
   .article2 {
     display: contents;
   }
-
   h4 {
     font-size: 25px;
   }
-
   .article-container {
     display: flex;
     flex-direction: row;
     margin-bottom: 100px;
   }
-
   .skills {
     font-size: 25px;
   }
-
   .social-media-icons li {
     width: 120px;
     height: 120px;
@@ -689,21 +637,17 @@ footer h2 {
     margin-top: 10px;
     border: 5px solid;
   }
-
   .social-media {
     height: 400px;
   }
-
   .bottom-icon {
     width: 60px;
     height: 90px;
     padding-left: 30px;
   }
-
   .social-media-icons {
     width: 600px;
   }
-
   footer {
     font-size: 30px;
     height: 300px;
@@ -714,52 +658,42 @@ footer h2 {
   header {
     height: 600px;
   }
-
   .header-picture {
     padding-right: 100px;
   }
-
   .avatar {
     height: 250px;
     width: 250px;
   }
-
   .icon {
     width: 30px;
     height: 30px;
     padding: 15px;
   }
-
   .social-icons li {
     width: 60px;
     height: 60px;
     border: 3px solid;
   }
-
   .social-icons {
     margin-right: 150px;
   }
-
   .title-container {
     padding-left: 150px;
     padding-top: 40px;
     margin-top: 200px;
   }
-
   .title-container h2 {
     font-size: 25px;
     padding-top: 20px;
   }
-
   #portfolio-title {
     font-weight: normal;
     font-size: 20px;
   }
-
   h1 {
     font-size: 60px;
   }
-
   .website-image,
   .website-image2 {
     width: 420px;
@@ -768,7 +702,6 @@ footer h2 {
   .featured-projects-wrapper {
     width: 500px;
   }
-
   .main-projects {
     width: 400px;
   }
