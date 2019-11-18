@@ -17,9 +17,9 @@ h1 {
 }
 
 h2 {
-  background-color: #748a84;
+  background-color: #45524f;
   color: #ffffff;
-  width: 260px;
+  width: 130px;
   height: 35px;
   font-family: "Montserrat";
   font-size: 22px;
@@ -38,6 +38,7 @@ h3 {
   font-size: 20px;
   font-weight: bolder;
   color: #45524f;
+  opacity: 2;
 }
 
 .tech-skills h2 {
@@ -269,7 +270,7 @@ header {
 
 .arrows {
   text-decoration: underline;
-  color: #748a84;
+  color: #45524f;
   font-weight: 700;
 }
 
@@ -283,7 +284,7 @@ header {
 }
 
 .project-title {
-  color: #748a84;
+  color: #45524f;
   text-transform: uppercase;
   font-weight: 700;
 }
@@ -385,7 +386,7 @@ header {
 }
 
 .skill-title {
-  color: #687c77;
+  color: #45524f;
   text-transform: uppercase;
   margin: 10px;
   font-weight: bold;
@@ -401,18 +402,21 @@ ul {
 .social-media {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
   padding-top: 40px;
   padding-bottom: 30px;
   height: 300px;
   color: #45524f;
-  background-color: #748a84;
+  background-color: #45524f;
 }
 
 .social-media-icons {
   padding-left: 25px;
   padding-bottom: 30px;
   width: 330px;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
 }
 
 .social-media-icons li {
@@ -442,8 +446,7 @@ ul {
   padding: 15px;
 }
 
-.social-media h2,
-footer h2 {
+.social-media h2 {
   margin-top: 10px;
   font-family: "Roboto";
   text-transform: uppercase;
@@ -454,12 +457,13 @@ footer h2 {
 
 /*FOOTER*/
 
-footer {
+.footer {
   height: 200px;
   background-color: #edebeb;
   display: flex;
   flex-direction: column;
   align-items: center;
+  align-content: center;
   padding-top: 50px;
   padding-bottom: 60px;
   font-size: 20px;
@@ -467,10 +471,11 @@ footer {
   color: #45524f;
 }
 
-footer h2 {
+.footer h2 {
   background: transparent;
   margin: 30px;
   color: #45524f;
+  text-align: center;
 }
 
 /*MEDIA QUERIES*/
@@ -546,12 +551,13 @@ footer h2 {
     height: 450px;
   }
   .tech-skills h2 {
-    width: 150px;
+    width: 130px;
   }
+
   h2 {
     font-size: 40px;
     height: 40px;
-    width: 500px;
+    width: 480px;
     padding-bottom: 10px;
     margin-bottom: 60px;
   }
@@ -609,9 +615,16 @@ footer h2 {
     flex-direction: column;
     justify-content: space-between;
   }
-  .article-section h3 {
+  .article-section h2 {
     padding: 0px;
+    width: 290px;
     font-size: 35px;
+  }
+  .social-media h2 {
+    width: 200px;
+  }
+  .skills h2 {
+    width: 150px;
   }
   .article {
     font-size: 20px;
