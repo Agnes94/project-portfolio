@@ -672,11 +672,12 @@ ul {
     height: 600px;
   }
   .header-picture {
-    padding-right: 100px;
+    padding-right: 70px;
   }
   .avatar {
-    height: 250px;
-    width: 250px;
+    height: 220px;
+    width: 220px;
+    top: 40px;
   }
   .icon {
     width: 30px;
@@ -692,13 +693,13 @@ ul {
     margin-right: 150px;
   }
   .title-container {
-    padding-left: 150px;
+    padding-left: 80px;
     padding-top: 40px;
     margin-top: 200px;
   }
   .title-container h2 {
-    font-size: 25px;
-    padding-top: 20px;
+    font-size: 15px;
+    padding-top: 15px;
   }
   #portfolio-title {
     font-weight: normal;
