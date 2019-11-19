@@ -40,19 +40,29 @@
         </div>
       </div>
       <div class="title-container">
-        <h3 id="portfolio-title">Portfolio: <span>Agnes Ketesdi</span></h3>
-        <h1>
+        <h3 id="portfolio-title">
+          Portfolio:
+          <span aria-labelledby="Portfolio author name">Agnes Ketesdi</span>
+        </h3>
+        <h1 aria-labelledby="title of author">
           frontend<br />
           developer
         </h1>
-        <h2>+ horticultural engineer</h2>
+        <h2 aria-labelledby="secondary title of author">
+          + horticultural engineer
+        </h2>
       </div>
       <div class="header-picture">
-        <img alt="avatar picture" class="avatar" src="Assets/IMG2black.jpg" />
+        <img
+          aria-label="profile picture"
+          alt="avatar picture"
+          class="avatar"
+          src="Assets/IMG2black.jpg"
+        />
       </div>
     </header>
     <!--Self-presentation section-->
-    <section class="self-presentation">
+    <section aria-labelledby="Introduction" class="self-presentation">
       <div class="wrapper">
         <p>
           <span class="line-dot"></span>Hello! I’m a strategic and creative
@@ -112,8 +122,10 @@
         <div>
           <a class="other-cards" href="">
             <p>
-              <span class="project-title">Weather app.</span> Lorem Epsom dolor
-              sit Amed ibero ut sagittis lacinia
+              <span aria-label="Project" class="project-title"
+                >Weather app.</span
+              >
+              Lorem Epsom dolor sit Amed ibero ut sagittis lacinia
               <span class="arrows">&gt;&gt;</span>
             </p></a
           >
@@ -124,8 +136,10 @@
         <div>
           <a class="other-cards" href="">
             <p>
-              <span class="project-title">Weather app.</span> Lorem Epsom dolor
-              sit Amed elementum dui tortor, et laoreet
+              <span aria-label="Project" class="project-title"
+                >Weather app.</span
+              >
+              Lorem Epsom dolor sit Amed elementum dui tortor, et laoreet
               <span class="arrows">&gt;&gt;</span>
             </p></a
           >
@@ -136,8 +150,10 @@
         <div>
           <a class="other-cards" href="">
             <p>
-              <span class="project-title">Weather app.</span> Lorem Epsom dolor
-              sit Amed <span class="arrows">&gt;&gt;</span>
+              <span aria-label="Project" class="project-title"
+                >Weather app.</span
+              >
+              Lorem Epsom dolor sit Amed <span class="arrows">&gt;&gt;</span>
             </p></a
           >
           <span class="tags">HTML 5</span> <span class="tags">CSS3</span>
@@ -147,7 +163,7 @@
       </div>
     </section>
     <!--Articles-->
-    <section class="article-section">
+    <section aria-labelledby="Articles" class="article-section">
       <h2>My thoughts</h2>
       <div class="article-container">
         <article>
@@ -196,7 +212,7 @@
           </article>
         </div>
       </div>
-      <h3>More thoughts</h3>
+      <h3 aria-labelledby="Other articles">More thoughts</h3>
       <div class="other-articles">
         <a class="other-cards" href="">
           <div>
@@ -241,7 +257,7 @@
       </div>
     </section>
     <!--Skills-->
-    <section class="skills">
+    <section aria-labelledby="Skill columns" class="skills">
       <h2>Skills</h2>
       <div class="skills-listing">
         <div class="skill-column">
@@ -325,10 +341,11 @@
       </div>
     </section>
     <footer>
-      <div class="footer">
+      <div aria-label="footer" class="footer">
         <h2>Contact</h2>
-        <span>Agnes Ketesdi</span> <span>+46765628714</span>
-        <span>agnes.ketesdi@gmail.com</span>
+        <span aria-label="author name">Agnes Ketesdi</span>
+        <span aria-label="mobile number">+46765628714</span>
+        <span aria-label="email address">agnes.ketesdi@gmail.com</span>
       </div>
     </footer>
   </body>
