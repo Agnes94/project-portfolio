@@ -280,6 +280,10 @@ header {
   font-weight: 700;
 }
 
+.arrows:hover {
+  opacity: 0.6;
+}
+
 .tags {
   background: #748a84;
   border: 1px solid #748a84;
