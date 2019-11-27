@@ -20,14 +20,12 @@ h2 {
   background-color: #45524f;
   color: #ffffff;
   width: 130px;
-  height: 35px;
+  height: 30px;
   font-family: "Montserrat";
   font-size: 22px;
   text-transform: uppercase;
   padding-top: 5px;
   font-weight: bold;
-  margin: 0px 60px 40px 55px;
-  padding-left: 10px;
 }
 
 h3 {
@@ -42,16 +40,24 @@ h3 {
 }
 
 .tech-skills h2 {
-  width: 80px;
-  padding-left: 15px;
+  width: 60px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .article-section h2 {
   width: 180px;
+  padding-left: 10px;
 }
 
 .skills h2 {
   width: 90px;
+  padding-left: 10px;
+}
+
+.featured-projects h2 {
+  width: 260px;
+  padding-left: 10px;
 }
 
 /*HEADER*/
@@ -328,7 +334,23 @@ header {
   background-size: cover;
 }
 
+.article-image2 {
+  background: url(Assets/computer.jpg);
+  width: 300px;
+  height: 180px;
+  position: relative;
+  margin-left: 35px;
+  margin-right: 35px;
+  opacity: 0.7;
+  background-size: cover;
+}
+
 .article-image:hover {
+  border: 2px solid grey;
+  opacity: 1;
+}
+
+.article-image2:hover {
   border: 2px solid grey;
   opacity: 1;
 }
@@ -399,14 +421,13 @@ ul {
 
 /*FOR MORE*/
 
-.social-media {
+.social-media-bottom {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-top: 40px;
   padding-bottom: 30px;
   height: 300px;
-  color: #45524f;
   background-color: #45524f;
 }
 
@@ -444,15 +465,6 @@ ul {
   width: 25px;
   height: 25px;
   padding: 15px;
-}
-
-.social-media h2 {
-  margin-top: 10px;
-  font-family: "Roboto";
-  text-transform: uppercase;
-  justify-content: center;
-  margin-left: 120px;
-  width: 120px;
 }
 
 /*FOOTER*/
@@ -551,7 +563,8 @@ ul {
     height: 450px;
   }
   .tech-skills h2 {
-    width: 130px;
+    width: 120px;
+    padding-left: 15px;
   }
 
   h2 {
@@ -568,6 +581,9 @@ ul {
   .featured-projects-container {
     display: flex;
     flex-direction: row;
+  }
+  .featured-projects h2 {
+    width: 470px;
   }
   .website-image2 {
     margin-top: 0;
@@ -616,12 +632,12 @@ ul {
     justify-content: space-between;
   }
   .article-section h2 {
-    padding: 0px;
+    padding-left: 15px;
     width: 290px;
     font-size: 35px;
   }
-  .social-media h2 {
-    width: 200px;
+  .social-media-bottom h2 {
+    width: 250px;
   }
   .skills h2 {
     width: 150px;
@@ -650,7 +666,7 @@ ul {
     margin-top: 10px;
     border: 5px solid;
   }
-  .social-media {
+  .social-media-bottom {
     height: 400px;
   }
   .bottom-icon {
