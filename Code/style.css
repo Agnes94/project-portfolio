@@ -238,7 +238,7 @@ header {
 }
 
 .website-image {
-  background: url(Assets/weatherapp.png);
+  background: url(Assets/survey.png);
   width: 300px;
   height: 180px;
   position: relative;
@@ -288,6 +288,7 @@ header {
   background: #748a84;
   border: 1px solid #748a84;
   padding: 2px;
+  margin-bottom: 3px;
   width: 40px;
   margin-right: 2px;
   font-family: "Roboto";
