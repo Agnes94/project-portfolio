@@ -330,25 +330,27 @@ header {
 }
 
 .article-image {
-  background: url(Assets/article.jpeg);
+  background: url(Assets/article.jpg);
   width: 300px;
   height: 180px;
   position: relative;
   margin-left: 35px;
   margin-right: 35px;
-  opacity: 0.7;
+  opacity: 0.8;
   background-size: cover;
+  border: 1px solid grey;
 }
 
 .article-image2 {
-  background: url(Assets/computer.jpg);
+  background: url(Assets/article2.jpg);
   width: 300px;
   height: 180px;
   position: relative;
   margin-left: 35px;
   margin-right: 35px;
-  opacity: 0.7;
+  opacity: 0.8;
   background-size: cover;
+  border: 1px solid grey;
 }
 
 .article-image:hover {
@@ -494,6 +496,11 @@ ul {
   margin: 30px;
   color: #45524f;
   text-align: center;
+}
+
+.vectors {
+  font-size: 15px;
+  margin-top: 20px;
 }
 
 /*MEDIA QUERIES*/
@@ -742,3 +749,4 @@ ul {
     width: 400px;
   }
 }
+
