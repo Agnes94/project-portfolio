@@ -430,49 +430,58 @@ ul {
 /*FOR MORE*/
 
 .social-media-bottom {
+  background-color: #45524f;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 40px;
-  padding-bottom: 30px;
-  height: 300px;
-  background-color: #45524f;
+  height: 200px;
 }
 
-.social-media-icons {
-  padding-left: 25px;
-  padding-bottom: 30px;
-  width: 330px;
+.bottom-links {
   display: flex;
-  flex-direction: row;
-  align-content: center;
+  justify-content: center;
+  width: 303px;
 }
 
-.social-media-icons li {
-  color: #ffffff;
-  list-style: none;
-  border: 3px solid #ffffff;
+.bottom-link {
+  border: 3px solid #fff;
   border-radius: 50%;
-  transition: 0.5s;
   width: 60px;
   height: 60px;
+  background: none;
+  background-repeat: no-repeat;
+  background-position: center center;
+  cursor: pointer;
+  text-indent: -9999px;
+}
+
+.bottom-linkedin {
+  background-image: url(assets/linkedin.svg);
+}
+
+.bottom-github {
+  background-image: url(assets/github.svg);
+}
+
+.bottom-stackoverflow {
+  background-image: url(assets/stack.svg);
+}
+
+.link-button {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  margin-right: 30px;
-  display: inline-block;
-  justify-content: center;
-  margin-top: 10px;
-  font-family: "Roboto";
+  align-items: center;
+}
+
+.link-button h3 {
+  font-size: 11px;
   text-transform: uppercase;
-}
-
-.social-media-icons li:hover {
-  border: 3px solid #707070;
-}
-
-.bottom-icon {
-  width: 25px;
-  height: 25px;
-  padding: 15px;
+  color: #ffff;
+  font-weight: bold;
+  margin-top: 10px;
+  text-decoration: none;
 }
 
 /*FOOTER*/
@@ -682,17 +691,31 @@ ul {
   .social-media-bottom {
     height: 400px;
   }
-  .bottom-icon {
-    width: 60px;
-    height: 90px;
-    padding-left: 30px;
-  }
-  .social-media-icons {
-    width: 600px;
-  }
   footer {
     font-size: 30px;
     height: 300px;
+  }
+
+  .bottom-links {
+    width: 690px;
+    margin-top: 20px;
+  }
+
+  .bottom-link {
+    width: 110px;
+    height: 110px;
+    font-size: 60px;
+  }
+
+  .link-button h3 {
+    font-size: 18px;
+    line-height: 41px;
+  }
+  .bottom-linkedin,
+  .bottom-stackoverflow,
+  .bottom-github {
+    background-size: 40px;
+    border: 5px solid #fff;
   }
 }
 
@@ -749,4 +772,3 @@ ul {
     width: 400px;
   }
 }
-
