@@ -48,6 +48,7 @@ h3 {
 .article-section h2 {
   width: 180px;
   padding-left: 10px;
+  margin-bottom: 40px;
 }
 
 .skills h2 {
@@ -58,6 +59,7 @@ h3 {
 .featured-projects h2 {
   width: 260px;
   padding-left: 10px;
+  margin-bottom: 40px;
 }
 
 /*HEADER*/
@@ -258,8 +260,30 @@ header {
   background-size: cover;
 }
 
+.website-image3 {
+  background: url(Assets/movie.png);
+  width: 300px;
+  height: 180px;
+  position: relative;
+  margin: 60px 35px 0px 35px;
+  opacity: 0.7;
+  background-size: cover;
+}
+
+.website-image4 {
+  background: url(Assets/toDoApp.png);
+  width: 300px;
+  height: 180px;
+  position: relative;
+  margin: 60px 35px 0px 35px;
+  opacity: 0.7;
+  background-size: cover;
+}
+
 .website-image:hover,
-.website-image2:hover {
+.website-image2:hover,
+.website-image3:hover,
+.website-image4:hover {
   border: 2px solid grey;
   opacity: 1;
 }
@@ -602,17 +626,26 @@ ul {
   }
   .featured-projects-container {
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
   }
   .featured-projects h2 {
     width: 470px;
+  }
+  .website-image {
+    width: 500px;
+    height: 300px;
   }
   .website-image2 {
     margin-top: 0;
     width: 500px;
     height: 300px;
   }
-  .website-image {
+  .website-image3 {
+    width: 500px;
+    height: 300px;
+  }
+  .website-image4 {
     width: 500px;
     height: 300px;
   }
@@ -620,7 +653,7 @@ ul {
     width: 500px;
     height: 50px;
     font-size: 25px;
-    margin-bottom: 50px;
+    margin-bottom: 100px;
   }
   .project-title {
     font-size: 25px;
@@ -761,7 +794,9 @@ ul {
     font-size: 60px;
   }
   .website-image,
-  .website-image2 {
+  .website-image2,
+  .website-image3,
+  .website-image4 {
     width: 420px;
     height: 300px;
   }
@@ -770,5 +805,8 @@ ul {
   }
   .main-projects {
     width: 400px;
+  }
+  .other-projects {
+    width: auto;
   }
 }
